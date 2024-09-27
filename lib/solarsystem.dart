@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:solor_system/splashscreen/ui/splashscreen.dart';
+import 'package:solor_system/Features/splashscreen/ui/splashscreen.dart';
 
 class SolarSystem extends StatelessWidget {
   const SolarSystem({super.key});

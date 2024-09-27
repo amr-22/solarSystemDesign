@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:solor_system/Features/HomeScreen/ui/homescreen.dart';
 
 class Splashscreen extends StatelessWidget {
   const Splashscreen({super.key});
@@ -50,7 +51,11 @@ class Splashscreen extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  print("go");
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const HomePage(),
+                    ),
+                  );
                 },
                 child: const Icon(
                   size: 50,
