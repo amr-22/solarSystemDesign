@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:solor_system/Features/PlanetPage/ui/planetscreen.dart';
 
 class PlanetContainer extends StatefulWidget {
   const PlanetContainer({super.key, required this.planet});
@@ -50,7 +51,11 @@ class _PlanetContainerState extends State<PlanetContainer> {
               fit: BoxFit.cover,
             ),
             onTap: () {
-              print(widget.planet["planetName"]);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => Planetscreen(planet: widget.planet),
+                ),
+              );
             },
           ),
         )
